@@ -1,0 +1,462 @@
+.header__mobile-menu
+    display: none
+
+.nav__item_active
+    a
+        color: #D49F51
+
+.nav__close
+    display: none
+
+@media screen and ( max-width: 1250px )
+    .nav
+        &__item
+            margin-right: 30px
+
+    .header
+        &__nav
+            margin: 30px
+
+@media screen and ( max-width: 1150px )
+    .nav
+        &__item
+            margin-right: 20px
+
+    .header
+        &__nav
+            margin: 20px
+
+@media screen and ( max-width: 1050px )
+    .nav
+        display: none
+
+    .header__mobile-menu
+        display: block
+        margin-left: 20px
+        font-size: 26px
+
+        &::before
+            color: #D49F51
+            transition: all .3s
+
+        &:hover
+            &::before
+                color: #3C2260
+
+    .nav
+        position: fixed
+        display: block
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        z-index: 999
+        margin: 0
+        overflow: hidden
+        transition: all .3s
+
+        &__back
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            background: #D49F51
+            opacity: 0.7
+            position: absolute
+            z-index: -1
+
+        &__list
+            width: 100%
+            max-width: 400px
+            background: #FFF
+            flex-flow: column
+            position: absolute
+            top: 0
+            right: -100%
+            border-left: 5px solid #D49F51
+            box-sizing: border-box
+            padding: 20px 30px !important
+            transition: all .6s
+            overflow-y: auto
+
+        &__item
+            margin-bottom: 10px
+
+            &_active
+                a
+                    background: #D49F51
+                    padding: 5px 15px
+                    color: #FFF
+
+        &__link
+            padding: 8px 0
+            padding: 5px 0
+
+            &:hover
+                background: #D49F51
+                padding: 5px 15px
+                color: #FFF
+
+            &::after
+                display: none
+
+        &__close
+            display: block
+            position: absolute
+            top: 30px
+            right: 30px
+            padding: 10px
+            border-radius: 100%
+            font-size: 18px
+            transition: all .3s
+
+            &::before
+                color: #CE9C58
+                transition: all .3s
+
+            &:hover
+                &::before
+                    color: #3C2260
+                    transition: all .3s
+
+    .header__nav
+        opacity: 0
+        visibility: hidden
+
+        &_open
+            visibility: visible
+            opacity: 1
+
+            .nav__list
+                right: 0
+
+@media screen and ( max-width: 1000px )
+    .ed-item
+        width: calc(50% - 30px)
+        margin-bottom: 30px
+
+@media screen and ( max-width: 950px )
+    .card-slide
+        padding: 39px 30px 55px 20px
+
+    .two-col
+        &__right
+            width: calc(100% - 350px)
+
+        &__left
+            margin-right: 30px
+
+    .full-image-item
+        &__title
+            font-size: 24px
+
+    .subscription
+        &__container
+            padding: 35px 40px 30px 40px
+
+        &__title
+            font-size: 18px
+
+    .list-3
+        &_archive
+            .list-3__item
+                width: calc(50% - 30px)
+
+    .post-item_border-bootom:nth-child(3n)::after
+        width: calc(100% + 30px)
+
+    .post-item_border-bootom:nth-child(2n)::after
+        width: 100%
+
+    .list-4
+        &__item
+            width: calc(33.333% - 50px)
+
+@media screen and ( max-width: 850px )
+    .two-col
+        flex-wrap: wrap
+        flex-flow: column-reverse
+
+        &__right,
+        &__left
+            width: 100%
+
+        &__right
+            padding-bottom: 0
+
+        &__left
+            .section-title
+                padding-top: 0
+
+            .list
+                justify-content: space-between
+                display: flex
+                align-items: stretch
+                flex-wrap: wrap
+
+                &__item
+                    width: calc(50% - 10px)
+
+                &__button
+                    margin-right: 20px
+                    justify-content: flex-end
+
+    .d-slider
+        padding: 30px 0 0 0
+
+        &__panel
+            margin-right: 20px
+
+        &__swiper
+            margin-right: 0
+
+    .all-posts
+        &__big-item
+            width: calc(100% - 300px - 20px)
+            margin-right: 20px
+
+        &__list
+            width: 300px
+
+    .post-item
+        &__title,
+        &__text
+            font-size: 15px
+
+    .no-image-item
+        &__title
+            font-size: 15px
+
+    body
+        font-size: 15px
+
+    .footer
+        margin-top: 100px
+
+    .section-title
+        &__title
+            font-size: 26px
+
+    .aside
+        width: 180px
+        position: relative
+
+        &__title::after
+            width: 100%
+
+    .article
+        &__title-block_margin
+            margin-top: 0
+
+        &__title-block
+            max-width: 100%
+            padding: 30px 0 35px 36px
+
+        &__info
+            justify-content: flex-start
+
+        &__body
+            position: relative
+            display: flex
+
+        &__content
+            width: calc(100% - 180px)
+
+@media screen and ( max-width: 800px )
+    .subscription
+        &__container
+            flex-wrap: wrap
+
+        &__title
+            width: 100%
+
+        &__form
+            margin-top: 10px
+            width: 100%
+            max-width: 100%
+
+    .subscription-form
+        &__input
+            width: calc(100% - 27px)
+
+    .become-author
+        .container
+            max-width: calc(100% - 80px)
+
+@media screen and ( max-width: 700px )
+    .all-posts
+        .list-3
+            &__item
+                width: calc(50% - 30px)
+
+                &:nth-child(3)
+                    display: none
+
+    .all-posts
+        &__big-item
+            width: 100%
+            height: 300px
+            margin-right: 0
+
+        &__list
+            margin-top: 30px
+
+        .list
+            width: 100%
+
+            &__item
+
+    .two-col
+        &__left
+            .list
+                &__item
+                    width: 100%
+
+                &__button
+                    justify-content: flex-start
+
+    .become-author
+        &__title
+            font-size: 26px
+
+    .section
+        &_d-slider
+            .section-title
+                flex-wrap: wrap
+
+                &__title
+                    width: 100%
+
+                .button
+                    &_footnote
+                        margin-left: 0
+                        margin-top: 7px
+
+    .footer
+        &__main
+            padding-bottom: 20px
+
+    .list-4
+        &__item
+            width: calc(50% - 50px)
+
+    .main__more
+        margin-bottom: 60px
+
+@media screen and ( max-width: 600px )
+    .card-slide
+        padding: 20px 20px 30px 15px
+
+        &__body
+            width: 100%
+
+    .ed-item
+        width: calc(100% - 30px)
+
+    .list-3
+        &_archive
+            .list-3__item
+                width: calc(100% - 30px)
+
+    .post-item_border-bootom:nth-child(3n)::after
+        width: 100%
+
+    .post-item_border-bootom:nth-child(2n)::after
+        width: 100%
+
+    .post-item_border-bootom::after
+        width: 100%
+
+    .list-3_archive::before
+        display: none
+
+    .article .wp-block-media-text
+        margin-left: 0
+
+        .wp-block-media-text__media
+            margin-bottom: 10px
+
+        .wp-block-media-text__content
+            width: 100%
+            padding: 0
+            margin-top: 30px
+
+    .article__body
+        display: block
+
+    .aside
+        float: left
+
+    .article__content
+        width: 100%
+
+    .article h1
+        font-size: 26px
+
+    .article h2
+        font-size: 22px
+
+    .article h3
+        font-size: 20px
+
+    .article h4
+        font-size: 18px
+
+    .subscription
+        width: calc(100% - 40px)
+
+@media screen and ( max-width: 450px )
+    .d-slider__panel
+        width: 80px
+        min-width: 80px
+
+    .list-2,
+    .list-3
+        &__item
+            width: calc(100% - 30px)
+
+    .all-posts
+        .list-3
+            &__item
+                width: calc(100% - 30px)
+
+    .section-title
+        justify-content: flex-end
+
+        &__title
+            width: 100%
+
+        &_space-between
+            flex-wrap: wrap
+
+        &__button
+            margin-top: 10px
+            margin-left: 0
+
+    .section
+        &_d-slider
+            .section-title
+                .button
+                    &_footnote
+                        margin-top: 10px
+
+    .logo_header
+        .logo__link
+            &:nth-child(1)
+                img
+                    width: 120px
+                    height: 32px
+
+            &:nth-child(2)
+                margin-left: 25px
+
+                img
+                    width: 70px
+                    height: 33px
+
+    .list-4
+        margin: 0 -15px
+
+        &__item
+            width: calc(50% - 30px)
+            margin: 0 15px 30px 15px

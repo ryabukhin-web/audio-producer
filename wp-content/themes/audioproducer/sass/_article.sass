@@ -1,0 +1,153 @@
+.article
+    padding-top: 20px
+
+    &_page
+        max-width: 980px
+
+    &_container
+        max-width: 995px
+        margin: 0 auto
+
+    &__image
+
+    &__title-block
+        max-width: 782px
+        margin: 0 auto
+        background: #FFF
+        display: flex
+        flex-flow: column
+        align-content: center
+        justify-content: center
+        padding: 30px 110px 35px 100px
+        z-index: 1
+        position: relative
+
+        &_margin
+            margin: -100px auto 0 auto
+
+    &__info
+        justify-content: center
+        margin-bottom: 14px
+
+    &__title
+        font-weight: 500
+        font-size: 32px
+        color: #333333
+        position: relative
+
+        &_single
+            .icon-elepse
+                position: absolute
+
+        .icon-elepse
+            top: 12px
+            left: -36px
+            font-size: 20px
+
+    &__body
+        position: relative
+
+    &__aside
+
+    &__content
+        max-width: 545px
+        margin: 0 auto
+        min-height: 200px
+
+    p
+        margin-bottom: 30px
+
+    .wp-block-media-text
+        margin-left: -180px
+        margin-bottom: 30px
+
+        &__media
+            height: 100%
+
+        &__content
+            height: 100%
+
+            *:last-child
+                margin-bottom: 0
+
+    [class^="icon-"] 
+                margin-right: 13px
+                line-height: 2.5
+
+    h1
+        font-weight: 500
+        font-size: 32px
+
+    h2
+        margin-top: 40px
+        font-weight: 500
+        font-size: 26px
+
+    h3
+        margin-top: 30px
+        font-weight: 500
+        font-size: 20px
+
+    h4
+        margin-top: 20px
+        font-weight: 500
+        font-size: 18px
+
+.aside
+    position: absolute
+    top: -20px
+    left: -20px
+    padding: 20px
+    background: #FFF
+
+    &__title
+        font-weight: 500
+        font-size: 18px
+        padding-bottom: 17px
+        margin-bottom: 17px
+        position: relative
+
+        &::after
+            content: ''
+            position: absolute
+            bottom: 0
+            left: 0
+            width: 142px
+            height: 1px
+            display: block
+            background: #DFDFDF
+
+    &__nav
+
+.category-nav
+
+    &__list
+
+    &__item
+        margin-bottom: 10px
+
+    &__link
+        background: #FFFFFF
+        border: 1px solid #D9D9D9
+        box-sizing: border-box
+        border-radius: 1px 19px 19px 0px
+        display: inline-block
+        color: #666
+        text-decoration: none
+        padding: 4px 16px
+        font-weight: 500
+        font-size: 12px
+        transition: all .3s
+
+        &:hover
+            color: #fff
+            text-shadow: 0 0 .9px #FFF, 0 0 .9px #FFF
+            background: #D49F51
+            border-color: #D49F51
+
+    &__item_active-parent
+        .category-nav__link
+            color: #fff
+            text-shadow: 0 0 .9px #FFF, 0 0 .9px #FFF
+            background: #D49F51
+            border-color: #D49F51

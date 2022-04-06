@@ -1,0 +1,376 @@
+html
+    min-height: 100%
+    min-width: 360px
+
+body
+    display: flex
+    flex-flow: column
+    height: 100%
+    min-width: 360px
+    font-family: 'Raleway', sans-serif
+    font-feature-settings: 'pnum' on, 'lnum' on
+    color: #333
+    font-size: 16px
+    font-weight: 400
+
+.container
+    max-width: 1220px
+    width: calc(100% - 40px)
+    margin: 0 auto
+
+.main
+    flex-grow: 1
+
+    &__more
+        padding-top: 20px
+        display: flex
+        align-items: center
+        justify-content: center
+
+    &__pathway
+        padding-bottom: 10px
+
+.image-conteiner
+    margin: 0
+    background-color: #FFF
+    background-repeat: no-repeat
+    background-size: 100% auto
+    background-position: center center
+    position: relative
+
+    &::before
+        content: ''
+        display: block
+        width: 100%
+        height: auto
+        padding: 100% 0 0
+
+    &__image
+        display: none
+
+    &_full
+        background-size: auto 100%
+        background-size: cover
+
+        &::before
+            padding: 0
+            height: 100%
+
+    &_post
+        background-size: 100% auto
+        background-size: cover
+        background-position: center center
+
+        &::before
+            padding: 70% 0 0
+
+    &_article
+        background-size: 100% auto
+        background-size: cover
+
+        &::before
+            padding: 50% 0 0
+
+    &_guild
+        border-radius: 100%
+        background-size: 100% auto
+        width: 90%
+        margin: 0 auto
+
+        &::before
+            padding: 95% 0 0
+
+        &::after
+            content: ''
+            position: absolute
+            top: 20%
+            left: -9%
+            background-image: url(images/laurel-1.png)
+            background-repeat: no-repeat
+            background-position: left bottom
+            width: 90%
+            height: 90%
+            background-size: auto 100%
+
+    &_slide
+        background-size: auto 100%
+
+.logo
+    &_header
+        display: flex
+        align-items: flex-end
+
+    &__link:nth-child(2)
+        margin-left: 30px
+        margin-bottom: 3px
+
+    &__image
+        transition: all .3s
+
+    &__link
+        &:hover
+            .logo__image
+                opacity: 0.7
+
+.section-title
+    padding: 70px 0 10px 0
+    display: flex
+    align-items: flex-end
+    justify-content: flex-start
+
+    &__title
+        display: flex
+        align-items: center
+        justify-content: flex-start
+        font-weight: 500
+        font-size: 36px
+        color: #333
+
+        .icon-elepse
+            margin-right: 16px
+            font-size: 20px
+
+    &__button
+        margin-bottom: 8px
+        margin-left: 45px
+        text-decoration: none
+
+    &_space-between
+        width: 100%
+        justify-content: space-between
+
+    &_page
+        padding-top: 10px
+        padding-bottom: 30px
+
+.button
+    border: none
+    transition: all .3s
+
+    &_footnote
+        padding: 7px 15px 7px 11px
+        font-weight: 400
+        font-size: 12px
+        line-height: 1.2
+        color: #FFFFFF
+        background: #D49F51
+        border-radius: 0 25px 25px 0
+        display: inline-block
+        border: 1px solid #D49F51
+        box-sizing: border-box
+
+    &_footnote-link
+        cursor: pointer
+
+        &:hover
+            background: #FFFFFF
+            border: 1px solid #D9D9D9
+            box-sizing: border-box
+            border-radius: 1px 19px 19px 0px
+            color: #666666
+
+    &_arrow
+        font-weight: 700
+        font-size: 12px
+        text-transform: uppercase
+        color: #D49F51
+        display: flex
+        align-items: center
+        margin-bottom: 10px
+        margin-left: 20px
+        line-height: 1
+
+        .icon-arrow
+            margin-left: 14px
+            font-size: 20px
+            margin-bottom: 2px
+
+            &::before
+                transition: all .3s
+
+        &:hover
+            color: #3C2260
+
+            .icon-arrow
+                &::before
+                    color: #3C2260
+
+    &_more
+        font-weight: 600
+        font-size: 15px
+        text-align: center
+        color: #D49F51
+        display: flex
+        align-items: center
+        justify-content: center
+        border: 1px solid #D49F51
+        box-sizing: border-box
+        box-shadow: 0px 4px 25px -10px rgba(212, 159, 81, 0.2)
+        border-radius: 27.5px
+        padding: 17px 43px
+        text-decoration: none
+        cursor: pointer
+
+        .icon-load
+            transition: all .3s
+            margin-right: 10px
+            font-size: 18px
+
+            &::before
+                transition: all .3s
+
+        &:hover
+            background: #D49F51
+            color: #FFF
+
+            .icon-load
+                transform: rotate(-360deg)
+
+                &::before
+                    color: #FFF
+
+    &_main
+        background: #D49F51
+        box-shadow: 0px 4px 25px -10px rgba(212, 159, 81, 0.2)
+        border-radius: 27.5px
+        font-weight: 700
+        font-size: 16px
+        line-height: 1
+        text-align: center
+        color: #FFFFFF
+        padding: 18px 36px 19px 36px
+        text-decoration: none
+        transition: all .3s
+
+        &:hover
+            background: #FFF
+            color: #3C2260
+
+.list
+    &__button
+        margin-left: 0
+        margin-top: 20px
+        text-decoration: none
+
+.list-3
+    margin: 0 -15px
+    display: flex
+    justify-content: flex-start
+    align-items: stretch
+    flex-wrap: wrap
+
+    &__item
+        width: calc(33.333% - 30px)
+        margin: 0 15px 30px 15px
+
+    &_archive
+        position: relative
+
+        &::before
+            content: ''
+            display: block
+            position: absolute
+            bottom: 30px
+            left: 0
+            width: 100%
+            height: 1px
+            background: #D9D9D9
+
+.list-2
+    margin: 0 -15px
+    display: flex
+    justify-content: flex-start
+    align-items: stretch
+    flex-wrap: wrap
+
+    &__item
+        width: calc(50% - 30px)
+        margin: 0 15px 30px 15px
+
+.list-4
+    margin: 0 -25px
+    display: flex
+    justify-content: flex-start
+    align-items: stretch
+    flex-wrap: wrap
+
+    &__item
+        width: calc(25% - 50px)
+        margin: 0 25px 50px 25px
+
+.kama_breadcrumbs
+    font-weight: 500
+    font-size: 12px
+    color: #333333
+
+    a
+        text-decoration: none
+        color: #B9B9B9
+        transition: all .3s
+
+        &:hover
+            color: #333333
+
+    .kb_sep
+        margin: 0 8px
+
+.guild-item
+    &__image
+
+    &__title
+        font-weight: 600
+        font-size: 18px
+        color: #BA8436
+        margin-top: 40px
+        text-align: center
+
+    &__text
+        margin-top: 3px
+        font-weight: 400
+        font-size: 13px
+        text-align: center
+        color: #808080
+
+$count: 0
+@for $i from 1 through 21
+    $count: $count + 1
+    @if $count == 22
+        $count: 1
+    ._show
+        &:nth-child(#{$i})
+            animation: _show-1 #{$count * 0.3}s ease-in-out, _show-2 0.9s ease-in-out #{$count * 0.3}s, _show-3 0.9s ease-in-out #{($count * 0.3) + 0.9}s infinite
+
+@keyframes _show-1
+    0%
+        opacity: 0
+
+    100%
+        opacity: 0
+
+@keyframes _show-2
+    0%
+        opacity: 0
+        transform: translateY(14%)
+
+    50%
+        opacity: 1
+        transform: translateY(0)
+
+    100%
+        opacity: 1
+
+@keyframes _show-3
+    0%
+        opacity: 1
+
+    100%
+        opacity: 1
+
+._rotate
+    animation: _rotate 1s ease-in-out infinite
+
+@keyframes _rotate
+    0%
+        transform: rotate(0deg)
+    100%
+        transform: rotate(-360deg)

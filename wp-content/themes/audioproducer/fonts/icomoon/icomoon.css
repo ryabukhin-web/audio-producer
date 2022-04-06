@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon/icomoon.eot?9gbezy');
+  src:  url('fonts/icomoon/icomoon.eot?9gbezy#iefix') format('embedded-opentype'),
+    url('fonts/icomoon/icomoon.ttf?9gbezy') format('truetype'),
+    url('fonts/icomoon/icomoon.woff?9gbezy') format('woff'),
+    url('fonts/icomoon/icomoon.svg?9gbezy#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+  content: "\e909";
+  color: #3c2260;
+}
+.icon-close:before {
+  content: "\e908";
+}
+.icon-search:before {
+  content: "\e900";
+  color: #d49f51;
+}
+.icon-phone:before {
+  content: "\e901";
+  color: #d49f51;
+}
+.icon-mail:before {
+  content: "\e902";
+  color: #d49f51;
+}
+.icon-load:before {
+  content: "\e903";
+  color: #d49f51;
+}
+.icon-tg:before {
+  content: "\e904";
+  color: #c68a33;
+}
+.icon-arrow:before {
+  content: "\e905";
+  color: #d49f51;
+}
+.icon-elepse:before {
+  content: "\e906";
+  color: #d49f51;
+}
+.icon-bold-arrow:before {
+  content: "\e907";
+  color: #d3d6db;
+}

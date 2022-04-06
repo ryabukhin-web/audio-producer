@@ -1,0 +1,132 @@
+.footer
+    margin-top: 220px
+    position: relative
+
+    &__main
+        background: #190433
+        color: #DBDBDB
+        padding: 170px 0 110px 0
+
+    &__container
+        max-width: 995px
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        flex-wrap: wrap
+
+    &__logo
+        margin-bottom: 50px
+        margin-right: 20px
+
+    &__menu
+        margin: 0 40px 30px 0
+
+        &:last-child
+            margin-right: 0
+            margin-left: 0
+
+    &__nav
+
+    &__menu_gold
+
+        .f-nav__link
+            color: #D49F51
+            text-decoration: none
+            border-bottom: 1px solid #D49F51
+
+            &:hover
+                border-color: #190433
+                color: #D49F51
+
+    &__bottom
+        border-top: 1px solid #3E3D4B
+        background: #190433
+        padding: 10px 0 11px 0
+        color: #989898
+        font-weight: 400
+        font-size: 14px
+        text-align: center
+
+.f-nav
+
+    &__list
+
+    &__item
+        margin-bottom: 17px
+
+    &__link
+        color: #DBDBDB
+        transition: all .3s
+        text-decoration: none
+
+        &:hover
+            color: #FFF
+
+.subscription
+    max-width: 990px
+    width: calc(100% - 80px)
+    margin: 0 auto
+    position: absolute
+    top: 0
+    left: 50%
+    transform: translate(-50%, -50%)
+    background: #3C2260
+    color: #FFF
+
+    &__container
+        padding: 35px 140px 30px 140px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        flex-wrap: wrap
+
+    &__title
+        font-weight: 500
+        font-size: 24px
+        width: 255px
+
+    &__form
+        max-width: calc(100% - 320px)
+
+.subscription-form
+    display: flex
+    align-items: stretch
+    justify-content: flex-start
+    width: 100%
+
+    &__input
+        background: none
+        border: none
+        border-bottom: 1px solid #6E5097
+        font-family: 'Raleway', sans-serif
+        font-style: normal
+        font-weight: 400
+        font-size: 14px
+        color: #FFFFFF
+        padding: 10px 0
+        flex-grow: 1
+
+        &::placeholder
+            font-family: 'Raleway', sans-serif
+            font-style: normal
+            font-weight: 400
+            font-size: 14px
+            color: #FFFFFF
+
+    &__button
+        display: flex
+        align-items: center
+        justify-content: center
+        background: none
+        border: none
+        border-bottom: 1px solid #6E5097
+        cursor: pointer
+
+        span
+            &::before
+                transition: all .3s
+
+        &:hover
+            span
+                &::before
+                    color: #fa9d1a
